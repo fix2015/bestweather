@@ -66,6 +66,7 @@ class MainController {
 
         if(countryCodeArr.length === 0){
             if(this._errorCountries.indexOf(country) === -1) this._errorCountries.push(country);
+            this._chekingCountry = null;
             if(next) next();
             return
         } else{
