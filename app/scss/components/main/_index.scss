@@ -1,0 +1,27 @@
+main{
+  md-list{
+    width: 100%;
+    .layout-row{
+      width: 100%;
+      span{
+        padding-right: 10px;
+      }
+      md-progress-circular{
+        display: inline;
+      }
+      a{
+        svg {
+          cursor: pointer;
+          color: blue;
+        }
+      }
+      .fa-check-circle{
+        color: green;
+      }
+      .fa-times-circle{
+        color: red;
+      }
+    }
+  }
+}
+
