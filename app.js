@@ -4,12 +4,12 @@ var path = require('path');
 process.env.PWD = process.cwd()
 var public = process.env.PWD + "/build/";
 var port = process.env.PORT || 8080;
-process.env.PWD = process.cwd()
+
 app.get('/', function(req, res) {
-    res.sendFile(path.join(process.env.PWD + "index.html"));
+    res.sendFile(path.join(public + "index.html"));
 });
 
-app.use('/', express.static(process.env.PWD));
+app.use('/', express.static(public));
 
 app.listen(port, function(){
     console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
