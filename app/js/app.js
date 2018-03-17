@@ -18,7 +18,7 @@ angular
   .module('weatherApp', dependencies)
   .service('HttpService', HttpService)
   .service('HelperService', HelperService)
-  .constant('API_KEY', '9be11b953f7de76a2d6bec9d53f58479')
+  .constant('API_KEY', 'e0c2ffe9bca3c3ee5436ded97546358e')
   .constant('API_DOMAIN', 'http://api.openweathermap.org/data/2.5/weather')
   .constant('COUNTRIES', countries)
   .constant('COUNTRIES_CODES', codes)
